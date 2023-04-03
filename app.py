@@ -25,6 +25,7 @@ def hello_world():
 def getHackathons():
     if request.method == 'POST':
         hackathons["New Hackathon"] = request.json
+        return hackathons
     else:
         return hackathons
 
